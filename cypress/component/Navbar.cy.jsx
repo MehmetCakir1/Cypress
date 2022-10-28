@@ -10,6 +10,7 @@ describe("Navbar Test",()=>{
     })
     it("Navbar Test",()=>{
         cy.get("a")
+        cy.get('a').eq(1).should('contain', 'ABOUT')
     })
 
     it("First Link Test",()=>{
