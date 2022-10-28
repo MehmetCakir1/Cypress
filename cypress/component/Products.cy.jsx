@@ -17,5 +17,8 @@ describe("Products Test",()=>{
     it("testing if the price has dollar sign before itself", () => {
         cy.get("div").find("h1").should("contain","$")
       });
+    it("testing the number of children of div", () => {
+        cy.get("img,h1,h2").should("have.length.gt",3)
+      });
 
 })
